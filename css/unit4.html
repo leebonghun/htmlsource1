@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    :root {
+      font-size: 13px;
+    }
+    .box {
+      float: left; /*행단위로 했던것들을 옆으로 배치해준다*/
+      margin-right: 20px;
+      background-color: blue;
+      color: #fff;
+      text-align: center;
+    }
+    /* .clearfix::after { 
+      content: "";
+      display: block;
+      clear: both;
+    }*/
+    .box_px {
+      width: 160px;
+      height: 160px;
+    }
+    .box_em {
+      width: 10em; /*16px(기본 폰트 사이즈) * 10 = 160*/
+      height: 10em;
+    }
+    .box_rem {
+      width: 10rem; /* 16px(기본) * 10 = 160*/
+      height: 10rem;
+    }
+  </style>
+  <body>
+    <div class="wrapper clearfix">
+      <div class="box box_px">PX</div>
+      <div class="box box_em">EM</div>
+      <div class="box box_rem">REM</div>
+    </div>
+  </body>
+</html>

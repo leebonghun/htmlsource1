@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*문서의 배경색 : rgb(9,100,160)*/
+body {
+  background-color: rgb(9, 100, 160);
+}
+/*container width 320px,*/
+#container {
+  width: 320px;
+  margin: 50px auto;
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  border: 1px solid gray;
+  background-color: #fff;
+  margin: 20px 10px;
+}
+.words {
+  position: absolute;
+  left: 300px;
+  top: 300px;
+  width: 200px;
+  text-align: center;
+}
+@media screen and (min-width: 1720px) {
+  #container {
+    width: 1710px;
+    margin: 50px auto;
+  }
+  .card {
+    position: relative;
+    float: left;
+    width: 550px;
+    height: 250px;
+    border: 1px solid gray;
+    background-color: #fff;
+    margin: 20px 10px;
+  }
+  .words {
+    position: absolute;
+    left: 300px;
+    top: 50px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1719px) {
+  #container {
+    width: 570px;
+    margin: 50px auto;
+  }
+  .card {
+    position: relative;
+
+    width: 550px;
+    height: 250px;
+    border: 1px solid gray;
+    background-color: #fff;
+    margin: 20px 10px;
+  }
+  .words {
+    position: absolute;
+    left: 310px;
+    top: 50px;
+    padding: 10px;
+  }
+}

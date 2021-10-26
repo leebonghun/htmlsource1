@@ -1,0 +1,22 @@
+.grant-parent {
+  width: 800px;
+  height: 500px;
+  border: 2px dashed lightgray;
+}
+.parent {
+  width: 800px;
+  height: 500px;
+  border: 2px dashed gray;
+}
+.child {
+  width: 800px;
+  height: 500px;
+  background-color: tomato;
+  border: 2px solid black;
+  font-size: 30px;
+}
+.fixed {
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+}

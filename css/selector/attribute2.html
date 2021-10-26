@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* a {
+        text-decoration: none;
+      } */
+      [target] {
+        text-decoration: none;
+      }
+      /* [target="_blank"] {
+        background-color: blue;
+        color: white;
+      }
+      [target="_self"] {
+        background-color: red;
+        color: white;
+      } */
+      .link1,
+      .link2 {
+        list-style: none;
+      }
+      /* [class="fruit_name"] {
+        color: red;
+        padding: 10px;
+      } */
+
+      /* .fruit_name {
+        color: red;
+        padding: 10px;
+      } */
+      [class$="name"] {
+        color: red;
+        padding: 10px;
+      }
+      [class$="color"] {
+        color: blue;
+        opacity: 0.3; /* 투명도 설정*/
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>속성 선택자</h1>
+    <ul>
+      <li class="google">
+        <a href="http://www.google.com" target="_blank">google</a>
+      </li>
+      <li class="link1">
+        <a href="http://www.naver.com" target="_blank">naver</a>
+      </li>
+      <li class="link2">
+        <a href="http://www.daum.net" target="_self">daum</a>
+      </li>
+    </ul>
+    <a href="mailto:master@google.com">master@google.com</a>
+    <div>
+      <input type="text" class="fruit_name" />
+      <input type="text" class="fruit_color" />
+    </div>
+  </body>
+</html>

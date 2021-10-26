@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #text {
+        color: green;
+      }
+      .area p {
+        color: red;
+      }
+      p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!--   <우선순위> 
+          !Important : 1000점
+            인라인선언 : 500점
+            아이디 선택자  : 100점
+            클래스서낵자 : 10점 (:hover, :link, :active)
+            태그 선택자 : 1점 
+            전체 선택자
+            상속
+            :not() => 점수가 없음
+            :not(h1) 
+            :not(.box)    
+        -->
+
+    <div class="area">
+      <p id="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        vero id ullam beatae veritatis, exercitationem cumque libero
+        dignissimos. Impedit ullam atque, nam voluptatem aut molestiae corrupti.
+        Eaque consequuntur dicta optio!
+      </p>
+      <p id="text2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illo ut,
+        cumque dolorum consectetur vero sapiente reprehenderit unde fugit
+        excepturi omnis facere ipsam laborum perspiciatis quia, culpa saepe
+        quis! Quidem?
+      </p>
+    </div>
+  </body>
+</html>

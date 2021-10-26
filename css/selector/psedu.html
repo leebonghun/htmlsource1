@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        text-decoration: none;
+        color: black;
+      }
+      a:visited {
+        color: greenyellow;
+      }
+      a:hover {
+        color: crimson;
+      }
+      a:active {
+        background-color: cyan;
+      }
+      input {
+        width: 150px;
+        outline: none; /*input 테두리 제거*/
+        border: 1px solid lightblue; /*새로운 테두리 지정*/
+        transition: 0.4s;
+        padding: 5px 10px; /*상하는 5px 좌우는 10px*/
+      }
+      input:focus {
+        width: 200px;
+        border-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 
+        가상 클래스 : 사용자 동작에 반응
+        : link :visited, :hover, :active 순서를 지켜야 함
+
+        :link : 방문하지 않은 링크에 스타일 적용
+        :visited : 방문한 링크에 스타일 적용
+        :hover : 요소에 마우스를 올려놨을 때 스타일 적용
+        :active : 요소를 활성화했을 때 스타일 적용
+        :focus : 웹 요소에 초점이 맞춰졌을 때 스타일 적용
+
+     -->
+    <h1>가상(pseudo) 클랙스 선택자</h1>
+    <ul>
+      <li><a href="https://www.google.com" target="_blank">google</a></li>
+      <li><a href="https://www.daum.net" target="_blank">daum</a></li>
+      <li><a href="https://www.naver.com" target="_blank">naver</a></li>
+      <li><a href="https://11st.co.kr" target="_blank">11번가</a></li>
+    </ul>
+    <div>
+      <input type="text" />
+    </div>
+  </body>
+</html>

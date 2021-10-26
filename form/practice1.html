@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>상품 주문서</h1>
+    <form action="" method="get">
+      <div>
+        <fieldset>
+          <legend>개인정보</legend>
+
+          <ul>
+            <li>
+              이름<input
+                type="text"
+                name=""
+                id=""
+                autofocus
+                placeholder="여백없이 입력"
+              />
+            </li>
+            <li>
+              연락처<input
+                type="tel"
+                name=""
+                id=""
+                pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+                required
+                placeholder="연락가능한 번호"
+              />
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>배송지 정보</legend>
+
+          <ul>
+            <li>주소<input type="text" name="" id="" /></li>
+            <li>
+              전화번호<input
+                type="tel"
+                name=""
+                id=""
+                pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+                required
+              />
+            </li>
+            <li>
+              메모<textarea name="contents" id="" cols="30" rows="5"></textarea>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>주문정보</legend>
+
+          <ul>
+            <li>
+              <input type="checkbox" name="" id="" />과테말라 안티구아<input
+                type="number"
+                name=""
+                id=""
+              />개
+            </li>
+            <li>
+              <input type="checkbox" name="" id="" />인도네시아 만델링<input
+                type="number"
+                name=""
+                id=""
+              />개
+            </li>
+            <li>
+              <input type="checkbox" name="" id="" />탈라는도다(블렌딩)<input
+                type="number"
+                name=""
+                id=""
+              />개
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div>
+        <button type="submit">주문하기</button>
+        <button type="reset">다시 작성</button>
+      </div>
+    </form>
+  </body>
+</html>

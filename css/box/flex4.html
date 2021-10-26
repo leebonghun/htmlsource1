@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex; /*felx : 주축(왼=>오 : 수평방향)
+                                교차축(위=>아래 : 수직방향)*/
+        /* flex-direction: row; /*flex-direction : 플렉스 방향 지정
+        row(기본),column 열 , row-reverse,column-reverse 순서가 바뀜*/
+        flex-wrap: wrap; /*flex-wrap : 플렉스 항목을 한 줄 또는 여러 줄로 배치
+        no-wrap(기본),wrap,wrap-reverse*/
+        /* justify-content: space-evenly; /*
+        flex-start(기본) : 기본을 쓸거면 굳이 안써도됨,space-around,space-evenly*/
+        align-content: space-between;
+        border: 1px solid;
+        height: 400px;
+      }
+      .container div {
+        width: 100px;
+        height: 100px;
+      }
+      .container div:first-child {
+        background-color: red;
+      }
+      .container div:nth-child(2) {
+        background-color: blue;
+      }
+      .container div:nth-child(3) {
+        background-color: green;
+      }
+      .container div:nth-child(4) {
+        background-color: magenta;
+      }
+      .container div:last-child {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>tem1</div>
+      <div>item2</div>
+      <div>item3</div>
+      <div>item4</div>
+      <div>item5</div>
+    </div>
+  </body>
+</html>
